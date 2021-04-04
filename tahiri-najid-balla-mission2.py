@@ -19,7 +19,7 @@ if X1>X2:    # utilisation de cette condition pour ne pas avoir des problemes au
     X2=temp
 #cette boucle a pour but de calculer le nombre des points d'intersection entre les deux fonctions en rapport avec le pas donnée
 k=0
-for i in range(X1,X2,pas):
+for i in range(X1,X2+1,pas):
     if fx(i)==gx(i):
         k=k+1
         res=i
